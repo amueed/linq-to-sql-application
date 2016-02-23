@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MIS_DB" Class="MedicalLINQDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=10.10.30.68;Initial Catalog=MIS_DB;Persist Security Info=True;User ID=mtbcweb" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MIS_DBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Patient" Member="Patients">
+    <Type Name="Patient">
+      <Column Name="Patient_Account" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SSN" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="Date_Of_Birth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Marital_Status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="ZIP" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="Home_Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Business_Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Financial_Guarantor" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Email_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Eligibility_Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Location_Code" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Expiry_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Chart_Id" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HL7Patient_Account" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Move_Collection" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Practice_Code" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CHK_Bounce_Bit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CHK_Bounce_No" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHK_Bounce_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CHK_Bounce_Entry_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Patient_Payment_Plan" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Patient_Statement" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Patient_Type" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Scan_No" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="[as]" Member="as" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Web_Resolve" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Web_Resolve_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PTL_Web_Appearnce_Days" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PTL_STATUS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PTL_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Scan_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EMPLOYER_CODE" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Sync_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="emer_contact_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emer_contact_rel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emer_contact_ph" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="guar_rel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="disabled_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lab_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="pharmacy_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="provider_code" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="alternate_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="notes" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="cell_phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ext" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Referring_Physician" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Address_To_Guarantor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Special_Billing_Note" Type="System.String" DbType="VarChar(120)" CanBeNull="true" />
+      <Column Name="CREATED_FROM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ALTERNATE_PHONE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="REM_NOTES" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="REM_FLAG" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Terminated" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SCAN_DATE_PTL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PAGE_NO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="[Termination Notice]" Member="Termination_Notice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="[Effective Date]" Member="Effective_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[Confirmation Date]" Member="Confirmation_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="scheduler_notes" Type="System.String" DbType="VarChar(3000)" CanBeNull="true" />
+      <Column Name="PRIMARY_PHONE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="invalidphonenumber" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="STOP_BRC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="INVALID_PHONE_NO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ETHNICITIES" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="race" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="languages" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DeathCause" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="CommunicationPreferenceType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CommunicationPreferenceValue" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address_Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS_MISSING" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ADDRESS_EXPIRY_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SSFormulary_Benefit_Plans" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="chk_Hospice" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Father_Cell" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Father_FName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Father_LName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mother_Cell" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mother_FName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mother_LName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="pharmacy2_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Picture_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPOUSE_Cell" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SPOUSE_FName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPOUSE_LName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REGISTRATION_COMPLETE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ADDITIONAL_BRC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="brc_generated" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Copay_Waived" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PATIENT_ALERT" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="EXEMPT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DUPLICATE_EMAIL_ID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Credit_Card_on_File" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="HOME_PHONE_TYPE" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="CELL_PHONE_TYPE" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="WORK_PHONE_TYPE" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="PRAC_ADDRESS_PT_BILLING" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RACE2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PATAMENDMENTID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PHR_Enable" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PHR_All" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PHR_New" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PHR_Inactive" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MIDDLE_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CountyParish_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Skype_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Recall_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Address_Line2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="REMINDERCALLIMMUNIZATION" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="check_noemail" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ADVANCE_DIRECTIVE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IsDisable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Email_status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zip_City_State" Member="Zip_City_States">
+    <Type Name="Zip_City_State">
+      <Column Name="ZIP_Code" Type="System.String" DbType="VarChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="City_Name" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="State_Code" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Time_Zone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Practice_Locations" Member="Practice_Locations">
+    <Type Name="Practice_Location">
+      <Column Name="Location_Code" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Location_Name" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Practice_Code" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Location_Address" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Location_City" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Location_State" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Location_Zip" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="Location_Short" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Clia_Number" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="clia_expiry_date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Phone_one" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone_two" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="phone_type_one" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phone_type_two" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sync_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="is_Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Phone_Ext_One" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Phone_Ext_Two" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="MDOS_Automation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MDOS_Automation_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Providers" Member="Providers">
+    <Type Name="Provider">
+      <Column Name="Provider_Code" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Practice_Code" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Provid_FName" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Provid_MName" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Provid_LName" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Provid_UPIN" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Provid_State_License" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="License_No" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Site_Id" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="DEA_No" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DEA_Expiry_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date_Of_Birth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Email_Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SSN" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="Taxonomy_Code" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Provider_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Provider_Title" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Patient_Statement" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Authorize_Comments" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="No_Of_Patient_Statement" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="Sent_To_Collection_Agency" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Status_Authorize" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Authorized_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Authorized_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Is_Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WCB_Rating_Code" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="WCB_Authorization_No" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="BCBS_GA_EDI_Number" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BCBS_GA_SENDER_EDI_Number" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Stop_Submission" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Phone_One" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone_Two" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone_Three" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone_Type_One" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Phone_Type_Two" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Phone_Type_Three" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Is_Billing_Physician" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Setup_Info_Send" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NPI" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Sync_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="First_DOS" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Old_Billing" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Old_Billing_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Temination" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Termination_Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Dormant_Day" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SPECIALIZATION_CODE" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="Phone_Four" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone_Type_Four" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Pt_Overpayment_Auth" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Phone_Ext_One" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Phone_Ext_Two" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Phone_Ext_Three" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Phone_Ext_Four" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="MDOS_Automation" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MDOS_Automation_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SPI" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="PROVIDER_IS_ATTENDING_PHYSICIAN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PROVIDER_DISPLAY_NAME" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STATE" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="ZIP" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="SERVERNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROVIDER_COLOR" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ARRIVED_COLOR" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Provid_Middle_Name" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ADDRESS_LINE2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ChartScribe" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="REVALIDATION_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Appointment_Status" Member="Appointment_Status">
+    <Type Name="Appointment_Status">
+      <Column Name="Appointment_Status_Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Appointment_Status_Description" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="rowguid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Appointments" Member="Appointments">
+    <Type Name="Appointment">
+      <Column Name="Appointment_Id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Provider_Code" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Patient_Account" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Facility_Id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Reason_Id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(3000)" CanBeNull="true" />
+      <Column Name="Appointment_Date_Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Appointment_Status_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Client_IP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Office_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Location_Id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Appointment_Units" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Priority_Flag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Patient_Notes_Flag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Time_From" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="practice_code" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsBreakTime" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsMeetingTime" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Sync_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Temp_time_from" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="App_Width" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Attending_Physician" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="is_NewPatient_Appointment" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="noshow_charges" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="eligibility_inquiry_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="eligibility_status" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="App_Source" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="amountcollected" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Eligibility_Remarks" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Reminder_Call" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Previous_Balance" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLAIM_NO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="eligibility_remarks_secondary" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="eligibility_status_secondary" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Resource_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="phr_email_sent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="patient_arrived" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="arrived_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CheckOut_Time" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PATIENT_CHECKOUT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CheckOut_Notes" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="IS_IMPORTANT" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IMPORTANT_NOTE" Type="System.String" DbType="VarChar(5000)" CanBeNull="true" />
+      <Column Name="IS_RESERVED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IS_SHARED_APP" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.WEBEHR_PROC_GETPROVIDER_TEMP" Method="WEBEHR_PROC_GETPROVIDER_TEMP">
+    <Parameter Name="PRACTICE_CODE" Parameter="pRACTICE_CODE" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="WEBEHR_PROC_GETPROVIDER_TEMPResult">
+      <Column Name="PROVIDER_CODE" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="PROVIDER_NAME" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.WEBEHR_PROC_GETLOCATION_TEMP" Method="WEBEHR_PROC_GETLOCATION_TEMP">
+    <Parameter Name="PRACTICE_CODE" Parameter="pRACTICE_CODE" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="WEBEHR_PROC_GETLOCATION_TEMPResult">
+      <Column Name="LOCATION_CODE" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LOCATION_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.WEBEHR_PROC_GETQUERY_REPORT_TEMP" Method="WEBEHR_PROC_GETQUERY_REPORT_TEMP">
+    <Parameter Name="DATE_FROM" Parameter="dATE_FROM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DATE_TO" Parameter="dATE_TO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PROVIDER_CODE" Parameter="pROVIDER_CODE" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="LOCATION_ID" Parameter="lOCATION_ID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PRACTICE_CODE" Parameter="pRACTICE_CODE" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="WEBEHR_PROC_GETQUERY_REPORT_TEMPResult">
+      <Column Name="TOTAL_APPOINTMENTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="APPOINTMENT_DATE_TIME" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NO_OF_NOSHOW" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.WEBEHR_PROC_GETQUERY_REPORT_TEMP2" Method="WEBEHR_PROC_GETQUERY_REPORT_TEMP2">
+    <Parameter Name="DATE_FROM" Parameter="dATE_FROM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DATE_TO" Parameter="dATE_TO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PROVIDER_CODE" Parameter="pROVIDER_CODE" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="LOCATION_ID" Parameter="lOCATION_ID" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PRACTICE_CODE" Parameter="pRACTICE_CODE" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="WEBEHR_PROC_GETQUERY_REPORT_TEMP2Result">
+      <Column Name="TOTAL_APPOINTMENTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="APPOINTMENT_DATE_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NO_OF_NOSHOW" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

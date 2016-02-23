@@ -1,0 +1,131 @@
+﻿body {
+    font-family: Calibri;
+    font-size: 12pt;
+    margin: 0px;
+}
+
+#header {
+    width:100%;
+    height:100px;
+    text-align:center;
+    background: linear-gradient(to left, #e1ceff , #6e0093);
+    color: white;
+    font-family: Cambria;
+    font-size:32pt;
+    font-weight: bold;
+    line-height:100px;
+}
+
+#menu {
+    width:100%;
+    height:30px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    background-color: #004689;
+    color:white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#menu a{
+    text-decoration:none;
+    color: white;
+    line-height:30px;
+}
+
+#menu a:hover{
+    color: red;
+    cursor:pointer;
+
+}
+
+.input-tran {
+    border: 0px solid;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+
+/*-------------Button CSS--------------*/
+.button {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-top: 3px;
+    padding-bottom:3px;
+    padding-left:10px;
+    padding-right:10px;
+    margin: 2px;
+    background: linear-gradient(to top, #c1c1c1 , #fff);
+
+}
+.button:hover {
+    opacity: 0.8;
+    cursor:pointer;
+}
+
+.button:active {
+    background: linear-gradient(to bottom, #c1c1c1 , #fff);
+}
+
+.CustomTable {
+    width:100%;
+    height:auto;
+    border-collapse:collapse;
+}
+
+.CustomTable thead tr {
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    font-size:14px;
+    vertical-align:bottom;
+    background: linear-gradient(to top, #dbdbdb , #fff);
+}
+
+.CustomTable td {
+    border:1px solid #c1c1c1;
+    position:relative;
+}
+
+.info {
+    background-image:url('../images/info.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+    display:inline-block;
+    margin-left:10px;
+    width:16px;
+    height:16px;
+}
+
+.edit {
+    background-image:url('../images/tasks_img_edit.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+    display:inline-block;
+    margin-left:20px;
+    width:16px;
+    height:16px;
+}
+
+.delete {
+    background-image:url('../images/icon_clear.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+    display:inline-block;
+    margin-left:10px;
+    width:16px;
+    height:16px;
+}
+
+.tooltip {
+    background-color: #ffffbf;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.SelectedRow {
+    background-color:#add9ff;
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MedicalLINQ">
+  <DataContextMoniker Name="/MedicalLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0b7ffa32-c9fc-45eb-9c72-a3880d818209" isExpanded="false" absoluteBounds="0.5, 0.875, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9e63ed0-5e9a-466d-9f31-f1e4e5402e3f" absoluteBounds="0.51500000000000012, 1.335, 1.9700000000000002, 24.4793701171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84d4df0d-e24f-470a-8be6-eb0e8282e91e" isExpanded="false" absoluteBounds="0.5, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Zip_City_State" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88cb78b9-3223-4337-a619-a6a6bc13d6ed" absoluteBounds="0.51500000000000012, 2.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1c9e5e1-6f44-49ca-817b-1838203bc808" isExpanded="false" absoluteBounds="2.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Practice_Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4e5f06da-c80b-471f-b14c-cbe355a9012e" absoluteBounds="2.765, 2.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d5bfe49-ceb2-4bd4-aeb0-118b947e93ae" isExpanded="false" absoluteBounds="5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Provider" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8a3df9b-2a1a-4acf-88eb-d9e1b7198a3d" absoluteBounds="5.015, 2.21, 1.9700000000000002, 15.056599934895832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19d67f53-0c4e-4951-9668-40048388aa8e" isExpanded="false" absoluteBounds="7.25, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Appointment_Status" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11a1b569-749b-4fdb-867e-5599abef7eaf" absoluteBounds="7.2650000000000006, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b66d4656-4103-4d9d-af82-01adea59de0a" isExpanded="false" absoluteBounds="2.75, 2.625, 2, 0.45">
+      <DataClassMoniker Name="/MedicalLINQDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69ea2352-3a0b-4eee-bf31-6bc17e86e22f" absoluteBounds="2.765, 3.085, 1.9700000000000002, 10.0567626953125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,54 @@
+﻿body {
+}
+
+
+#WidgetArea {
+    width: 70%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e4e4e4;
+}
+
+#PopUp {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display:none;
+}
+
+.dashboard-block {
+    width:250px;
+    height:200px;
+    border: 1px dashed #004689;
+    border-radius: 15px;
+    margin:10px;
+    font-family: Cambria;
+    background-color:#fff;
+}
+
+.dashboard-contents {
+    width:100%;
+    height:75%;
+    color: #004689;
+    text-align:center;
+    font-size: 20px;
+    display:block;
+}
+
+.dashboard-head {
+    width:100%;
+    height:15%;
+    color: #fff;
+    text-align:center;
+    font-weight:bold;
+    font-size: 20px;
+    background-color:#004689;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    line-height: 30px;
+}

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="6489-Mueed" Class="LINQLocalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=it-n77;Initial Catalog=6489-Mueed;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="_6489_MueedConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DASHBOARD_DEFAULT_SETTINGS" Member="DASHBOARD_DEFAULT_SETTINGs">
+    <Type Name="DASHBOARD_DEFAULT_SETTING">
+      <Column Name="DASHBOARD_SETTINGS_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DASHBOARD_ITEM" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SHOW_ITEM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="POSITION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PCMH_SURVEY_QUESTIONS" Member="PCMH_SURVEY_QUESTIONs">
+    <Type Name="PCMH_SURVEY_QUESTION">
+      <Column Name="PCMH_QUESTIONS_ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PCMH_QUESTION" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="PRACTICE_CODE" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DELETED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CREATED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFIED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFIED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PCMH_SURVEYS" Member="PCMH_SURVEYs">
+    <Type Name="PCMH_SURVEY">
+      <Column Name="PCMH_SURVEY_ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PCMH_SURVEY_TITLE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PCMH_SURVEY_DESCRIPTION" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="PRACTICE_CODE" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DELETED" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CREATED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CREATED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MODIFIED_BY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODIFIED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PCMH_Target" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DeadLine_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.PROC_GET_DASHBOARD_DEFAULT_SETTINGS" Method="PROC_GET_DASHBOARD_DEFAULT_SETTINGS">
+    <ElementType Name="PROC_GET_DASHBOARD_DEFAULT_SETTINGSResult">
+      <Column Name="DASHBOARD_SETTINGS_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DASHBOARD_ITEM" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SHOW_ITEM" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="POSITION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PROC_UPDATE_DASHBOARD_DEFAULT_SETTINGS" Method="PROC_UPDATE_DASHBOARD_DEFAULT_SETTINGS">
+    <Parameter Name="SHOW_ITEM" Parameter="sHOW_ITEM" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="DASH_ID" Parameter="dASH_ID" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PCMH_PROC_GET_SURVEY_QUESTIONS" Method="PCMH_PROC_GET_SURVEY_QUESTIONS">
+    <Parameter Name="SURVEY_ID" Parameter="sURVEY_ID" Type="System.Int64" DbType="BigInt" />
+    <ElementType Name="PCMH_PROC_GET_SURVEY_QUESTIONSResult">
+      <Column Name="QUESTION" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PCMH_PROC_SEARCH_PATIENT" Method="PCMH_PROC_SEARCH_PATIENT">
+    <Parameter Name="Search_Criteria" Parameter="search_Criteria" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="Search_Data" Parameter="search_Data" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="PCMH_PROC_SEARCH_PATIENTResult">
+      <Column Name="Patient_Account" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="First_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SSN" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="Date_Of_Birth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Marital_Status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="Char(2)" CanBeNull="true" />
+      <Column Name="ZIP" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="Home_Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Business_Phone" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Email_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Created_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Modified_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="practice_code" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

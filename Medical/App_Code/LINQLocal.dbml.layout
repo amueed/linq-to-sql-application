@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LINQLocal">
+  <DataContextMoniker Name="/LINQLocalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d718ec1f-9eff-43c6-a888-e7665908d5d7" isExpanded="false" absoluteBounds="0.625, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/LINQLocalDataContext/DASHBOARD_DEFAULT_SETTING" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4febc98d-e85d-4a3f-8cf6-174e52ea807d" absoluteBounds="0.64000000000000012, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6712a5ce-d139-4db2-b1ff-fc05b22b18f2" isExpanded="false" absoluteBounds="4.25, 0.625, 2, 0.45">
+      <DataClassMoniker Name="/LINQLocalDataContext/PCMH_SURVEY_QUESTION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d6ace44-7877-4cbf-912b-ac04ffbabfca" absoluteBounds="4.265, 1.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a29c6460-e97b-4dac-8577-f1ff88a78550" isExpanded="false" absoluteBounds="8, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/LINQLocalDataContext/PCMH_SURVEY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="155f0fc8-d5a2-4d02-9862-e1aca65fba17" absoluteBounds="8.015, 2.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

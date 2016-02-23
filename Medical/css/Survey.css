@@ -1,0 +1,85 @@
+﻿body {
+}
+
+#mainDiv {
+    color: #777;
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-menu-div {
+    width: 100%;
+    height: 32px;
+    background-color:#004689;
+}
+
+#inner-menu {
+    list-style-type: none;
+    color:#fff;
+    line-height:35px;
+}
+#inner-menu li {
+    font-size: 12pt;
+    display:inline;
+    background-color:#896bb9;
+    padding-top:3px;
+    padding-bottom:1px;
+    padding-left:10px;
+    padding-right:10px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+#inner-menu li:hover {
+    cursor:pointer;
+    color:blue;
+}
+
+.active {
+    font-weight:bold;
+    border-bottom:4px solid #fff;
+}
+
+#div-question-setup {
+    width:100%;
+    height:auto;
+}
+
+#div-suvey-setup {
+    width:100%;
+    height:auto;
+}
+
+#div-generate-survey {
+    width:100%;
+    height:auto;
+}
+
+.section-header {
+    width:100%;
+    height:25px;
+    margin-top:10px;
+    color:black;
+    text-indent: 10px;
+    background: linear-gradient(to top, #c1c1c1 , #fff);
+    outline: 1px solid gray;
+    line-height:25px;
+
+}
+
+.section-body {
+    width:auto;
+    height:auto;
+    color:black;
+    outline: 1px solid gray;
+    padding: 15px;
+    margin-bottom:20px;
+}
